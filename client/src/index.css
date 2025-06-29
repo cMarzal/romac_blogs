@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+html {
+  --navbar-height: 4rem;
+}
+
+@media (max-width: 992px) {
+  html {
+    --navbar-height: 3.25rem;
+  }
+}
+
+body{
+    background-color: #f3f4f6;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.animatedButton {
+    animation-duration: 10000ms
+}
+
+.ql-container {
+    border: none !important;
+}
+
+.ql-toolbar {
+    border: none !important;
+}
+
+.ql-editor {
+    border: none !important;
+}
+
+.singlePageContent {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Style for h1 inside .singlePageContent */
+  .singlePageContent h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 0.1em;
+  }
+  
+  /* Style for h2 inside .singlePageContent */
+  .singlePageContent h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  
+  /* Style for h3 inside .singlePageContent */
+  .singlePageContent h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3d3d3d;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+/* Lists */
+.singlePageContent ul,
+.singlePageContent ol {
+  padding-left: 2em;
+  margin-top: 0px;
+}
+
+.singlePageContent ul {
+  list-style-type: disc;
+}
+
+.singlePageContent ol {
+  list-style-type: decimal;
+}
+
+.singlePageContent li {
+  margin-bottom: 0em;
+}
+
+.singlePageContent pre {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 1rem;
+    border-radius: 1px;
+    overflow-x: auto;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.singlePageContent code {
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    font-size: 0.95rem;
+}
+  

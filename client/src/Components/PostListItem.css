@@ -1,0 +1,6 @@
+.postlistitem-hover-bg {
+  transition: background 0.4s;
+}
+.postlistitem-hover-bg:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 15%, rgba(255,106,0,0.5) 55%, rgba(238,9,121,0.4) 80%, rgba(0,195,255,0.3) 100%);
+} 
