@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+dotenv.config();
+require('dotenv').config();
+
 import express from "express";
 import connectDB from "./lib/connectDB.js";
 import userRouter from "./routes/user.route.js";
@@ -8,6 +12,7 @@ import { clerkMiddleware, requireAuth } from "@clerk/express";
 import cors from "cors"
 
 const app = express();
+console.log('ImageKit public key:', process.env.IK_PRIVATE_KEY);
 
 app.use(cors(process.env.CLIENT_URL));
 app.use(clerkMiddleware());

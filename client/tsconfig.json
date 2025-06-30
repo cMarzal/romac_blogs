@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "jsx": "react-jsx",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "outDir": "dist",
+        "noEmit": true,
+        "module": "esnext"
+    },
+    "include": ["src"]
+}
+  

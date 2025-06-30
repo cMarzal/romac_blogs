@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "../Components/Image";
+import Image from "../components/Image";
 
 const AboutPage = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
+    <div className="mx-auto px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-46 max-w-[1400px]">
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 mt-8 md:mt-16 pt-[var(--navbar-height)]">
           Carlos
         </h1>
         <p className="text-xl text-gray-600">

@@ -78,7 +78,7 @@ const FeaturedPosts = () => {
   return (
     <div>
       {/* Title Section */}
-      <div className="px-4 text-center pt-8 lg:pt-24 pb-4 lg:pb-8">
+      <div className="px-4 text-center pb-4 lg:pb-8">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
           Featured Posts
         </h2>
@@ -87,15 +87,15 @@ const FeaturedPosts = () => {
         </p>
       </div>
       {/* Posts Section */}
-      <div className="relative w-screen left-[50%] right-[50%] mx-[-50vw]">
-        <div className="container box-border !max-w-[1672px] !px-6 lg:!px-9">
-          <div className="w-full rounded-3xl bg-gradient-to-br from-blue-900 via-green-500 to-indigo-500">
+      <div className="container-full px-4 pb-4 md:px-6">
+        <div className="relative flex flex-col justify-start mx-auto h-full rounded-2xl text-center md:justify-between md:px-4 lg:px-2 xl:px-10 2xl:px-14">
+          <div className="w-full rounded-3xl bg-gradient-to-br from-purple-900 via-green-700 to-indigo-500">
               <div className="max-w-[1300px] mx-auto">
                 <div className="relative w-full rounded-2xl overflow-hidden px-4 pb-8">
                   {/* Navigation Arrows */}
                   <button
                     onClick={prevSlide}
-                    className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-105"
+                    className="absolute left-2 sm:left-4 md:left-6 lg:left-1 xl:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-105"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -103,7 +103,7 @@ const FeaturedPosts = () => {
                   </button>
                   <button
                     onClick={nextSlide}
-                    className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-105"
+                    className="absolute right-2 sm:right-4 md:right-6 lg:right-1 xl:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-105"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -111,7 +111,7 @@ const FeaturedPosts = () => {
                   </button>
 
                   {/* Posts Container */}
-                  <div className="relative h-[500px] overflow-hidden px-6 lg:px-2 xl:px-4">
+                  <div className="relative h-[500px] overflow-hidden px-2 sm:px-4 md:px-6 lg:px-2 xl:px-4">
                     <div 
                       className="flex transition-transform duration-500 ease-in-out h-full"
                       style={{ transform: getTransformStyle() }}
@@ -125,7 +125,7 @@ const FeaturedPosts = () => {
                               )}
                             </div>
                             <div className="flex flex-col flex-1 p-4">
-                              <Link to={`/${post.slug}`} className="text-xl font-bold hover:text-blue-600 transition-colors mb-2 line-clamp-2">
+                              <Link to={`/${post.slug}`} className="text-md md:text-xl font-bold hover:text-blue-600 transition-colors mb-2 line-clamp-2">
                                 {post.title}
                               </Link>
                               <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">

@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 html {
-  --navbar-height: 4rem;
+  --navbar-height: 3.75rem;
 }
 
 @media (max-width: 992px) {
   html {
-    --navbar-height: 3.25rem;
+    --navbar-height: 3rem;
   }
 }
 
 body{
     background-color: #f3f4f6;
     width: 100%;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .animatedButton {
@@ -34,11 +34,9 @@ body{
 }
 
 .singlePageContent {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
     color: #333;
-    padding: 20px;
   }
   
   /* Style for h1 inside .singlePageContent */

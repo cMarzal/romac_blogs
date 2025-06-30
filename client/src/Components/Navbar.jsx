@@ -85,9 +85,11 @@ const Navbar = () => {
         )}
         <div className={`relative flex h-[var(--navbar-height)] w-full items-center justify-between rounded-lg border border-transparent px-2 py-1.5 transition-[box-shadow_background-color_border-color] duration-300 motion-reduce:transition-none lg:grid lg:grid-cols-[1fr_auto_1fr] lg:rounded-2xl lg:py-[0.4375rem] lg:pr-[0.4375rem] ${scrolled ? 'bg-white shadow-[0px_5px_18px_rgba(204,_204,_204,_0.5)]' : 'bg-transparents shadow-none'}`}>
           {/* LOGO */}
-          <Link to="/" className="relative w-fit flex items-center gap-2 text-2xl overflow-hidden md:px-3 font-bold text-gray-900 hover:text-black transition-colors" onClick={handleNavLinkClick}>
-            <Image src="logo_nb.png" alt="logo" w={28} h={28}/>
-            <span className="font-mono font-extrabold uppercase bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">Romac Blogs</span>
+          <Link to="/" className="relative w-fit flex items-center gap-2 overflow-hidden md:px-3 font-bold text-gray-900 hover:text-black transition-colors" onClick={handleNavLinkClick}>
+            <Image src="logo_nb.png" alt="logo" className="w-6 h-6 md:w-7 md:h-7"/>
+            <span className="font-sans font-extrabold uppercase text-xl md:text-2xl bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              Romac Blogs
+            </span>
           </Link>
 
           {/* MOBILE MENU */}
