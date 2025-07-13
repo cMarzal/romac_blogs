@@ -49,7 +49,7 @@ const SinglePostPage = () => {
         )}
         {/* detail */}
         <div className="flex flex-col pb-2 lg:py-8 gap-4">
-          <div className="flex flex-row">
+          <div className="flex flex-row gap-3">
             <div className="lg:w-2/3 flex flex-col gap-4 lg:gap-6">
               <h1 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-gray-900">
                 {data.title}
@@ -91,7 +91,7 @@ const SinglePostPage = () => {
           <div className="flex-1 text-md lg:text-md flex flex-col gap-6 text-justify prose prose-lg max-w-none singlePageContent" dangerouslySetInnerHTML={{ __html: data.content}}>
           </div>
           {/* menu */}
-          <div className="flex-shrink-0 w-full lg:w-50 xl:w-[250px] h-max sticky top-8">
+          <div className="flex-shrink-0 w-full lg:w-50 xl:w-[250px] h-max sticky top-24">
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 shadow-lg border-2 border-blue-100 hover:shadow-xl transition-all duration-300">
               <h2 className="mb-4 text-lg font-bold text-blue-900 flex items-center gap-2">
                 <span>✍️</span> Meet the Author

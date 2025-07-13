@@ -83,7 +83,7 @@ const AboutPage = () => {
         <p className="text-gray-600 mb-6">
           I'm always interested in discussing cybersecurity, data analysis, and SIEM solutions.
         </p>
-        <div className="flex space-x-6">
+        <div className="flex space-x-6 mb-16">
           {/* LinkedIn */}
           <a 
             href="https://www.linkedin.com/in/carlos-marzal/" 

@@ -21,7 +21,7 @@ const Homepage = () => {
                   <div className="space-y-6 px-4 text-center">
                     <h1 className="text-white text-center text-5xl sm:text-6xl xl:text-7xl 2xl:text-8xl pt-12 md:pt-20 pb-6 font-bold">
                       Learn Tech with<br/>
-                      Romac Blogs
+                      Romac Blog
                     </h1>
                     <p className="text-white text-md md:text-md lg:text-xl leading-relaxed text-center">
                       Hi! I'm Carlos, an engineer with over 5 years of experience in the tech industry.

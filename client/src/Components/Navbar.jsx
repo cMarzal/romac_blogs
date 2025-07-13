@@ -78,7 +78,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-2 z-[100] w-full lg:top-4">
-      <div className="container box-border !max-w-[1672px] !px-6 md:!px-9">
+      <div className="container box-border !max-w-[3000px] !px-6 md:!px-9">
         {/* Overlay for mobile menu */}
         {open && (
           <div className="fixed inset-0 z-40 bg-white md:hidden" style={{background: 'linear-gradient(135deg, #ffffff 0%, #ffffff 20%, rgba(255,106,0,0.5) 50%, rgba(238,9,121,0.4) 80%, rgba(0,195,255,0.3) 100%)'}}></div>
@@ -88,7 +88,7 @@ const Navbar = () => {
           <Link to="/" className="relative w-fit flex items-center gap-2 overflow-hidden md:px-3 font-bold text-gray-900 hover:text-black transition-colors" onClick={handleNavLinkClick}>
             <Image src="logo_nb.png" alt="logo" className="w-6 h-6 md:w-7 md:h-7"/>
             <span className="font-sans font-extrabold uppercase text-xl md:text-2xl bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-              Romac Blogs
+              Romac Blog
             </span>
           </Link>
 

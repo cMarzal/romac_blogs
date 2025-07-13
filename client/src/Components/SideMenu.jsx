@@ -35,7 +35,6 @@ const SideMenu = () => {
     const sortOptions = [
       { value: "newest", label: "Newest", icon: "🆕" },
       { value: "popular", label: "Most Popular", icon: "🔥" },
-      { value: "trending", label: "Trending", icon: "📈" },
       { value: "oldest", label: "Oldest", icon: "⏳" }
     ];
 
@@ -83,20 +82,30 @@ const SideMenu = () => {
               <span>📑</span> Categories
             </h2>
             <div className="flex flex-col gap-2">
-              {categories.map((category) => (
-                <Link
-                  key={category.id}
-                  to={category.id ? `/posts?category=${category.id}` : "/posts"}
-                  className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
-                    currentCategory === category.id
-                      ? "bg-blue-50 text-blue-600"
-                      : "text-gray-600 hover:bg-gray-50"
-                  }`}
-                >
-                  <CategoryIcon icon={category.icon} />
-                  <span>{category.name}</span>
-                </Link>
-              ))}
+              {categories.map((category) => {
+                // Clone current search params
+                const newSearchParams = new URLSearchParams(searchParams.toString());
+                if (category.id) {
+                  newSearchParams.set("category", category.id);
+                } else {
+                  newSearchParams.delete("category");
+                }
+                const searchString = newSearchParams.toString() ? `?${newSearchParams.toString()}` : "";
+                return (
+                  <Link
+                    key={category.id}
+                    to={{ pathname: "/posts", search: searchString }}
+                    className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
+                      currentCategory === category.id
+                        ? "bg-blue-50 text-blue-600"
+                        : "text-gray-600 hover:bg-gray-50"
+                    }`}
+                  >
+                    <CategoryIcon icon={category.icon} />
+                    <span>{category.name}</span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
